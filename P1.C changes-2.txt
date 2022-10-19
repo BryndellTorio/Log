@@ -1,0 +1,55 @@
+ECO-Link
+
+next rev ---
+
+~ put back the Hall effect sensor for detection of the manual lever
+~ T[1:3] input on micro might change to U6 output schmitt
+~ remove the swf connector and other components once the tunning is achieve
+~ dnp c43
+~ dnp R128
+
+This rev ---
+
+********* state machine *********
+~ populate Y2
+~ populate R29
+~ populate R89
+
+~ disconnect pin-5 from the shorted pin 5-2-3 of IC1 
+ *disconnect IC1-pin5 to +ECLK
+~ LED2 part BL-BUBGE204 is a common anode from testing. datasheet indicated its a common cathode.
+~ dnp D33/D32/D34
+
+~ R:\Projects\Eco_Link\8-Testing\Electronics\P1.C\ECO\DELAY_T3-M13_2GATE.pdf
+	1* dnp R50_2
+	* cut t3-gate track under mosfet M13_2
+	2* dnp R50_1
+	* cut t3-gate track mosfet M13_1
+~ R16 change to 510K
+~ add gen diode with anode to M21-Gate and cathode to M9-drain
+~ short U7-pin3 to gnd
+~ D11 replace with DFLS2100Q-7
+~ R23 replace with 4.7Mohm - dont exec
+~ R19 replace with 560K - dont exec
+
+~ diode silk genral pin 1 indicator change to thicker cathode line visible when parts is fitted. (AOI)
+
+*************** measurement*******************
+~ CT harvester output resistance 9.6ohms
+~ 0.35A primary maintain 5V
+~ 0.65A start charge FS caps
+
+
+
+********* MFB *********
+~ Change Rms5V to 0R
+~ Change R156 to 0R
+~ Change RmsVDD to 0R
+~ Change L2 to 1k resistor
+~ Change C45 to 10uF Cap
+~ Remove C4
+
+[IMI CHANGELOG]
+
+~ short U7-pin3 to gnd
+~ D11 replace with DFLS2100Q-7
