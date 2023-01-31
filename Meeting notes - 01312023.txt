@@ -1,0 +1,18 @@
+Time: 16:07
+Date: 2023-01-31
+
+4.1.2 use wireless to measure Output power.
+	- remove Antenna symbol
+	- measure the output power at 5m apart.
+4.1.3 remove E-Load.
+
+3 boards used in the ambient will be sent to ATC.
+
+other fresh 3 boards will be used in the extreme test +55 and -40.
+
+Include UPS in the drawings.
+
+4.7.3 change the thresholds.
+4.7.4 update procedures.
+4.9. add channels to check the waveform input/output.
+	- state or timing of the signals.
